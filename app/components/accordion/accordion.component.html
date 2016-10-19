@@ -1,0 +1,10 @@
+<section class="accordion">
+    <h2 class="accordion__block-title">Accordion Sample</h2>
+    <div *ngFor="let tab of tabs; let i = index;">
+        <input id="ac-{{i}}" name="accordion__select" type="radio" [checked]="i == 0" />
+        <label htmlFor="ac-{{i}}">{{ tab.title }}</label>
+        <article>
+            <p>{{tab.article}}</p>
+        </article>
+    </div>
+</section>
